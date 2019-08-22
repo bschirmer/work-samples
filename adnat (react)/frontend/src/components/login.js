@@ -64,8 +64,9 @@ class Login extends Component {
         <div id='login_container'>   
           <ErrorContainer error={this.state.error}></ErrorContainer>
           <div className="Login">
+            <h2>Login</h2>
             <form onSubmit={this.handleSubmit}>
-                <div >
+                <div>
                     <input type="text" id="email" onChange={this.handleChange} placeholder="Email" />
                     <input type="password" id="password" onChange={this.handleChange} placeholder="Password"/>
                     <input type="Submit" label="Login"/>

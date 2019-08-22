@@ -48,7 +48,6 @@ class SignUp extends Component {
     fetch('http://localhost:3000/auth/signup', options)
       .then(res => res.json())
       .then((data) => {
-        console.log(data);
         if(data.hasOwnProperty('error'))
         {
           this.setState({error: data.error});
@@ -66,12 +65,13 @@ class SignUp extends Component {
         <div id='signup_container'>   
           <ErrorContainer error={this.state.error}></ErrorContainer>
           <div className="SignUp">
+            <h2>Sign up</h2>
             <form onSubmit={this.handleSubmit}>
                 <div >
                     <input type="text" id="name" onChange={this.handleChange} placeholder="Name" />
                     <input type="text" id="email" onChange={this.handleChange} placeholder="Email" />
                     <input type="password" id="password" onChange={this.handleChange} placeholder="Password"/>
-                    <input type="password" id="confirm_password" onChange={this.handleChange} placeholder="Confirm Password"/>
+                    <input type="password" id="passwordConfirmation" onChange={this.handleChange} placeholder="Confirm Password"/>
                     <input type="Submit" label="Login"/>
                 </div>
             </form>
