@@ -14,3 +14,4 @@ I wanted to do way more on this. I wanted to implement all endpoints and style a
 - In total, including learning time, I would estimate I spent about 10 hours on this. There were a few gotchas that stumped me for a while like CORS on chrome and callbacks. But after that it was pretty smooth sailing. 
 - There is no Get organisation by Id route. I have added an extra leave organistaion button because this became an issue with testing. 
 - At this stage (12:46am), I can't get semantic-ui to install, it keeps freezing when trying to create a theme.config. I am capable of doing CSS myself, but in this instance, I don't have the time.
+- If you add data directly to the database, you will see that there is logic for showing shifts in the shift tables. Its not comeplete and some columns don't work, but there was an attempt. I don't think this was hard, but time really killed me here
