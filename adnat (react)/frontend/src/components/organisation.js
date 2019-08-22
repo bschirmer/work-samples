@@ -55,9 +55,8 @@ class Organisation extends Component {
         return(
           <div id="organisation">
             <ErrorContainer error={this.state.error}></ErrorContainer>
-            <div> Organisation.js</div>
               <div className="card-title">
-              {this.state.name}
+                <h3>{this.state.name}</h3>
                 <p className="card-subtitle mb-2 text-muted">Hourly Rate: {this.state.hourlyRate}</p>
                   <button onClick={() => alert("brah, create this")}>Edit</button> <button onClick={() => this.leaveOrganisation()}>Leave</button>
               </div>
@@ -67,11 +66,11 @@ class Organisation extends Component {
 
                 <table className="ui celled table">
                   <thead>
-                    <tr><th>Employee</th>
-                    <th>Start Time</th>
-                    <th>Finish Time</th>
-                    <th>Break Length (mins)</th>
-                    <th>Hours Worked</th>
+                    <tr><th>Employee |</th>
+                    <th>Start Time |</th>
+                    <th>Finish Time |</th>
+                    <th>Break Length (mins) |</th>
+                    <th>Hours Worked |</th>
                     <th>Shift Cost</th>
                   </tr></thead>
                   <tbody>
